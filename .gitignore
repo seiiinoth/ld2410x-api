@@ -1,0 +1,86 @@
+# Prerequisites
+*.d
+
+
+# Compiled Object files
+*.lo
+*.o
+*.ko
+*.obj
+*.elf
+
+# Linker output
+*.ilk
+*.map
+*.exp
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Static libraries
+*.lib
+*.a
+*.la
+*.lo
+*.lai
+
+
+# Compiled Dynamic libraries
+*.dll
+*.so
+*.so.*
+*.dylib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Kernel Module Compile Results
+*.mod*
+*.cmd
+.tmp_versions/
+modules.order
+Module.symvers
+Mkfile.old
+dkms.conf
+
+*.cmake
+**/cmake-build-debug
+**/CMakeCache.txt
+**/cmake_install.cmake
+**/install_manifest.txt
+**/CMakeFiles/
+**/CTestTestfile.cmake
+**/Makefile
+**/*.cbp
+**/CMakeScripts
+**/compile_commands.json
+**/CopyOfCMakeCache.txt
+**/DartConfiguration.tcl
+
+## Local
+
+build/**/*
+
+include/*
+lib/*
+bin/*
+test/test_runner
+
+.vscode/*
+
+**/.DS_Store
+
+!.clang-format
+!.editorconfig

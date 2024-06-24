@@ -1,0 +1,93 @@
+ColumnLimit: 0
+AlignAfterOpenBracket: Align
+
+AlignConsecutiveAssignments: AcrossComments
+AlignConsecutiveMacros: AcrossEmptyLinesAndComments
+AlignConsecutiveDeclarations: None
+
+AlignEscapedNewlines: Left
+
+BitFieldColonSpacing: After
+SpacesInSquareBrackets: false
+
+IndentPPDirectives: BeforeHash
+
+KeepEmptyLinesAtTheStartOfBlocks: false
+AlignOperands: Align
+Cpp11BracedListStyle: true
+SpaceBeforeAssignmentOperators: true
+IndentCaseLabels: true
+
+PointerAlignment: Right
+
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 1
+SpacesBeforeTrailingComments: 2
+
+ReflowComments: true
+SpacesInLineCommentPrefix:
+  Minimum: 1
+  Maximum: 1
+
+AllowAllParametersOfDeclarationOnNextLine: true
+
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortBlocksOnASingleLine: Always
+AllowShortIfStatementsOnASingleLine: AllIfsAndElse
+AllowShortLoopsOnASingleLine: false
+
+SeparateDefinitionBlocks: Always
+SortIncludes: Never
+SpaceAfterLogicalNot: false
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyParentheses: false
+
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: false
+AlwaysBreakTemplateDeclarations: No
+
+BinPackArguments: true
+BinPackParameters: true
+
+BreakBeforeBraces: Custom
+
+BraceWrapping:
+  AfterControlStatement: Never
+  AfterEnum: false
+  AfterStruct: false
+  AfterFunction: true
+  AfterNamespace: true
+  AfterUnion: false
+  AfterExternBlock: false
+  BeforeCatch: false
+  BeforeElse: false
+  IndentBraces: false
+  SplitEmptyFunction: true
+  SplitEmptyRecord: true
+  SplitEmptyNamespace: true
+
+BreakBeforeBinaryOperators: None
+BreakBeforeInheritanceComma: false
+BreakBeforeTernaryOperators: false
+BreakStringLiterals: false
+
+EmptyLineBeforeAccessModifier: LogicalBlock
+KeepEmptyLinesAtEOF: false
+
+InsertNewlineAtEOF: true
+
+CommentPragmas: 'NOLINT|(@|\\)(attention|author|brief|bug|cond|date|deprecated|else(if|cond)?|end(cond|if)|exception|if(not)?|invariant|note|par|t?param|post|pre|return|retval|sa|see|since|test|throw|todo|version|warning|xrefitem)|^!'
+
+SpaceBeforeParens: Custom
+SpaceBeforeParensOptions:
+  AfterControlStatements: true
+  AfterForeachMacros: true
+  AfterFunctionDeclarationName: false
+  AfterFunctionDefinitionName: false
+  AfterIfMacros: true
+  AfterOverloadedOperator: true
+  AfterRequiresInClause: true
+  AfterRequiresInExpression: false
+  BeforeNonEmptyParentheses: false
