@@ -79,6 +79,9 @@ bin/*
 test/test_runner
 
 .vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/c_cpp_properties.json
 
 **/.DS_Store
 
