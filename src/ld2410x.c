@@ -314,6 +314,13 @@ uint8_t ld2410x_restart(struct ld2410x_dev *dev)
   rslt = null_ptr_check(dev);
 
   if (rslt == LD2410X_OK) {
+    memcpy(&dev->comm.t_conf, &dev->conf, sizeof(dev->conf));
+
+    dev->comm.wait_approve = LD2410X_CONFIG_WAIT_APPROVE;
+
+    // Engineering mode disabled automatically after reset
+    dev->comm.t_conf.engineering_mode = LD2410X_ENGINEERING_MODE_DISABLED;
+
     rslt = send_cmd(LD2410X_CMD_RESTART, NULL, 0, dev);
 
     if (rslt == LD2410X_OK) {
