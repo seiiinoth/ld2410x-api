@@ -579,7 +579,6 @@ uint8_t ld2410x_intf_callback(struct ld2410x_dev *dev)
     rslt = read_frame(dev);
 
     dev->comm.frame_len    = 0;
-    dev->comm.t_data       = NULL;
     dev->comm.wait_approve = LD2410X_CONFIG_APPROVED;
     dev->comm.cmd_word     = LD2410X_NO_CMD;
   }
@@ -609,7 +608,6 @@ static uint8_t receive_frame(uint8_t frame_len, struct ld2410x_dev *dev)
 
   if (dev->intf_mode == LD2410X_CONTINUOUS_INTF) {
     dev->comm.frame_len    = 0;
-    dev->comm.t_data       = NULL;
     dev->comm.wait_approve = LD2410X_CONFIG_APPROVED;
     dev->comm.cmd_word     = LD2410X_NO_CMD;
   }
